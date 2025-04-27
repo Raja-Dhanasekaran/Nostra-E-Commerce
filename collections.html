@@ -31,23 +31,61 @@
 </section>
     <!--Navbar-->
 
-   <section class=" shadow-2xl sticky top-0 z-30 bg-white">
-    <div class="flex justify-between p-5  ">
-        <h1 class="text-3xl font-bold">Nostra</h1>
-        <div >
-            <ul class="flex gap-10 text-xl text-gray-500">
-                <li class="hover:underline transform hover:scale-125 hover:text-black "><a href="index.html">Home</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">New Arrival</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Most Wanted</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="collections.html">Collections</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="contact.html">Contact Us</a></li>
-            </ul>
-
-
+    <section class=" shadow-2xl sticky top-0 z-30 bg-white">
+        <div class="flex justify-between p-5  ">
+            <h1 class="text-3xl font-bold">Nostra</h1>
+    
+            
+            <div id="menuBar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6 md:hidden cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+                </path>
+            </svg>
+            </div>
+    
+            <div class=" hidden md:block" >
+                <ul class="flex gap-10 text-xl text-gray-500">
+                    <li class="hover:underline transform hover:scale-125 hover:text-black "><a href="index.html">Home</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">New Arrival</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Most Wanted</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="collections.html">Collections</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="contact.html">Contact Us</a></li>
+                </ul>
+    
+    
+            </div>
         </div>
-    </div>
+    
+       </section> 
 
-   </section>
+
+<!--side navbar-->
+
+
+<section>
+
+    
+
+    <div id="sideNav" class=" bg-green-900 text-white w-2/4 h-screen top-0 fixed z-40 -left-full transition-all duration-1000" >
+        <div id="sideNavClose" class=" ">
+            <p class="ml-5 mt-5 cursor-pointer ">X</p>
+        </div>
+
+        
+
+        <ul class="flex flex-col gap-10 text-xl items-center text-white ">
+            <li class="hover:underline transform hover:scale-125 hover:text-black "><a href="index.html">Home</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">New Arrival</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Most Wanted</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="collections.html">Collections</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+</section>
+
+
+
 
    <!--search bar--> 
 <section>
@@ -202,13 +240,15 @@
 
 </section>
 
+<!--discount sale-->
 
-<section class=" bg-black  h-80 mt-5">
+<section class=" bg-black  w-full aspect-[3/4] mt-5">
     <div class="discountSale grid grid-cols-2 gap-5">
         <div class="discountSale-sec1">
-            <img src="./images/Kids/k3.jpg" class="w-full h-80 p-10 rounded-l-full" >
+            <img src="./images/Kids/k3.jpg" class="w-full h-full p-10 rounded-l-full bg-white hidden md:block" >
+            <img src="./images/Kids/k4.jpg" class="w-full h-full p-10 rounded-l-full  bg-white md:hidden" >
         </div>
-        <div class="discountSale-sec2 text-white text-center pt-28">
+        <div class="discountSale-sec2 text-white text-center py-20 md:py-40">
             <h2 class="text-4xl font-extrabold">Limited Offer</h2>
             <h4 class="text-2xl font-semibold">75% OFF on Kids Trendy Collections</h4>
             <button class="p-3 rounded-xl bg-white text-black mt-5 font-semibold">Shop Now</button>
@@ -218,7 +258,7 @@
 </section>
 
    <!--new letter-->
-<section class="text-center">
+<section class="text-center mt-5">
     <h1 class="text-3xl font-bold">Join our News Letter</h1>
     <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
     <input type="text" class="mt-5 border border-black container w-3/4 p-3">
@@ -249,6 +289,6 @@
 
 </section>
         
-
+<script src="collections.js"></script>
 </body>
 </html>

@@ -34,12 +34,14 @@
     <div class="flex justify-between p-5  ">
         <h1 class="text-3xl font-bold">Nostra</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        
+        <div id="menuBar">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
             </path>
         </svg>
-
+        </div>
 
         <div class=" hidden md:block" >
             <ul class="flex gap-10 text-xl text-gray-500">
@@ -55,6 +57,33 @@
     </div>
 
    </section>
+ 
+
+
+<!--side navbar-->
+
+
+<section>
+
+    
+
+    <div id="sideNav" class=" bg-green-900 text-white w-2/4 h-screen top-0 fixed z-40 -left-full transition-all duration-1000" >
+        <div id="sideNavClose" class=" ">
+            <p class="ml-5 mt-5 cursor-pointer ">X</p>
+        </div>
+
+        
+
+        <ul class="flex flex-col gap-10 text-xl items-center text-white ">
+            <li class="hover:underline transform hover:scale-125 hover:text-black "><a href="index.html">Home</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">New Arrival</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Most Wanted</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="collections.html">Collections</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+</section>
+
 
    <!--Hero Image section-->
    <section class=" flex relative">
@@ -70,7 +99,7 @@
 
     <div  >
         <img src="./images/Hero/nh1.jpg" class="w-screen h-96 " id="hero1" >
-        <img src="./images/Hero/nh2.jpg" class="w-screen h-96 absolute top-0 left-0 hidden " id="hero2" >
+        <img src="./images/Hero/c1.jpg" class="w-screen h-96 absolute top-0 left-0 hidden " id="hero2" >
         
     </div>
     <div class="absolute top-40 left-1/4">
@@ -87,42 +116,8 @@
 
 <!--Brand-->
 
-<section class="brand p-5 " >
 
-    <h2 class="font-semibold text-2xl">Brands</h2>
 
-    
-        <div class="brandItems  bg-black text-white h-44  flex gap-3 text-center justify-around  rounded-3xl">
-            <div class="brandItem">
-                <img src="./images/Brand/fabindia.png" class="w-28 h-36 rounded-xl pt-1">
-                <p class="pt-1">FabIndia</p>
-            </div>
-            <div class="brandItem ">
-                <img src="./images/Brand/biba.png" class="w-28 h-36 rounded-xl pt-1">
-                <p class="pt-1">Biba</p>
-            </div>
-            <div class="brandItem ">
-                <img src="./images/Brand/h&m.jpg" class="w-28 h-36 rounded-xl pt-1">
-                <p class="pt-1">H&M</p>
-            </div>
-            <div class="brandItem ">
-                <img src="./images/Brand/levis.png" class="w-28 h-36 rounded-xl pt-1">
-                <p class="pt-1">Levis</p>
-            </div>
-        
-            <div class="brandItem ">
-                <img src="./images/Brand/raymond.png" class="w-28 h-36 rounded-xl pt-1">
-                <p class="pt-1">Raymond</p>
-            </div>
-            <div class="brandItem ">
-                <img src="./images/Brand/zara.jpg" class="w-28 h-36 rounded-xl pt-1">
-                <p class="pt-1">ZARA</p>
-            </div>
-        </div>
-    
-
-</section>
-  <!--chat mama-->
 <section class="brand p-5">
     <h2 class="font-semibold text-2xl mb-4">Brands</h2>
   
@@ -165,12 +160,12 @@
 <!--service-->
 <section>
 
-    <div class="service1 flex justify-between p-5">
-        <div class="one w-96 text-4xl font-semibold">
+    <div class="service1 flex flex-row md:flex-row justify-between p-5">
+        <div class="one w-full md:w-96 text-2xl md:text-4xl font-semibold">
             <h2>We Provide Best</h2>
         <h2>Customer Experience</h2>
     </div>
-    <div class="two font-semibold pt-4 text-xl">
+    <div class="two font-semibold pt-4 text-xs md:text-xl ">
         <p>|| We ensure that our customer have the best shopping experience</p>
     </div>
     </div>
@@ -178,7 +173,7 @@
 </section>
 
 <section>
-    <div class="service2 flex p-5 gap-5"> 
+    <div class="service2 grid grid-cols-2 md:grid-cols-4 p-5 gap-5"> 
 
         <div class="service2-Sec bg-gray-300 rounded-lg p-3">
             <i class="fa-solid fa-circle-check text-3xl"></i>
@@ -211,64 +206,69 @@
 
 <!--New arrival-->
 
-<section class="p-5 ">
+<section class="p-5  ">
     <div> <h2 class="text-2xl font-semibold">New Arrivals</h2></div>
 
-    <div class="newArrivals flex justify-between pt-3">
-        <div class="newArrivals-container relative ">
-            <img src="./images/New arrival/arr1.jpg" class="w-52 h-52 rounded-2xl ">
-            <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
-            <buton class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</buton>
-        </div>
-        <div class="newArrivals-container relative ">
-            <img src="./images/New arrival/arr2.jpg" class="w-52 h-52 rounded-2xl ">
-            <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
-            <buton class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</buton>
-        </div>
+    <div class="newArrivals overflow-x-auto lg:overflow-x-scroll pt-3">
+        <div class=" grid grid-cols-2 gap-4 lg:grid-cols-4 min-w-full lg:min-w-max ">
+            <div class="newArrivals-container relative ">
+                <img src="./images/New arrival/arr1.jpg" class="w-52 h-52 rounded-2xl ">
+                <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
+                <button class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</button>
+            </div>
+
         
-        <div class="newArrivals-container relative ">
-            <img src="./images/New arrival/arr3.jpg" class="w-52 h-52 rounded-2xl ">
-            <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
-            <buton class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</buton>
-        </div>
-        
-        <div class="newArrivals-container relative ">
-            <img src="./images/New arrival/arr4.jpg" class="w-52 h-52 rounded-2xl ">
-            <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
-            <buton class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</buton>
+            <div class="newArrivals-container relative ">
+                <img src="./images/New arrival/arr2.jpg" class="w-52 h-52 rounded-2xl ">
+                <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
+                <button class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</button>
+            </div>
+            
+            <div class="newArrivals-container relative ">
+                <img src="./images/New arrival/arr3.jpg" class="w-52 h-52 rounded-2xl ">
+                <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
+                <button class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</button>
+            </div>
+            
+            <div class="newArrivals-container relative ">
+                <img src="./images/New arrival/arr4.jpg" class="w-52 h-52 rounded-2xl ">
+                <div class="absolute inset-0 bg-gray-200 opacity-50 w-52 h-52 rounded-2xl"></div>
+                <button class="absolute top-24 left-16 bg-white text-black p-2 rounded-3xl">Shop Now</button>
+            </div>
         </div>
         
         
     </div>
 </section>
 
+
 <!--Most Wanted-->
 
 <section class="p-5 ">
     <div> <h2 class="text-2xl font-semibold">Most Wanted</h2></div>
-    <div class="mostWanted grid grid-cols-2 md:grid-cols-4 gap-4 pt-3">
-        <div class="mostWanted-container relative w-60 h-80">
-            <img src="./images/Most wanted/mw1.jpg" class="rounded-md w-64 h-80 ">
+    <div class="mostWanted grid grid-cols-2 md:grid-cols-4 gap-4 pt-3 ">
+        <div class="mostWanted-container relative w-full aspect-[3/4]">
+            <img src="./images/Most wanted/mw1.jpg" class="rounded-md w-full h-full object-cover ">
             <p class="bg-red-600 absolute top-1 left-1 w-20 text-center rounded-md text-white p-2">Sale</p>
             <div class="absolute bottom-2 right-2"><i class="fa-regular fa-heart text-3xl"></i></div>
         </div>
 
-        <div class="mostWanted-container relative w-60 h-80">
-            <img src="./images/Most wanted/mw2.jpg" class="rounded-md w-64 h-80 ">
-            <p class="bg-red-600 absolute top-1 left-1 w-20 text-center rounded-md text-white p-2">Sale</p>
-            <div class="absolute bottom-2 right-2"><i class="fa-regular fa-heart text-3xl"></i></div>
-        </div>
-
-
-        <div class="mostWanted-container relative w-60 h-80">
-            <img src="./images/Most wanted/mw4.jpg" class="rounded-md w-64 h-80 ">
+        <div class="mostWanted-container relative w-full aspect-[3/4]">
+            <img src="./images/Most wanted/mw2.jpg" class="rounded-md w-full h-full object-cover">
             <p class="bg-red-600 absolute top-1 left-1 w-20 text-center rounded-md text-white p-2">Sale</p>
             <div class="absolute bottom-2 right-2"><i class="fa-regular fa-heart text-3xl"></i></div>
         </div>
 
 
-        <div class="mostWanted-container relative w-60 h-80">
-            <img src="./images/Most wanted/mw3.jpg" class="rounded-md w-64 h-80 ">
+        <div class="mostWanted-container relative w-full aspect-[3/4]">
+            <img src="./images/Most wanted/mw4.jpg" class="rounded-md w-full h-full object-cover ">
+            <p class="bg-red-600 absolute top-1 left-1 w-20 text-center rounded-md text-white p-2">Sale</p>
+            <div class="absolute bottom-2 right-2"><i class="fa-regular fa-heart text-3xl"></i></div>
+        </div>
+
+
+        <div class="mostWanted-container relative w-full aspect-[3/4]">
+            <img src="./images/Most wanted/mw3.jpg" class="rounded-md w-full h-full object-cover">
             <p class="bg-red-600 absolute top-1 left-1 w-20 text-center rounded-md text-white p-2">Sale</p>
             <div class="absolute bottom-2 right-2"><i class="fa-regular fa-heart text-3xl"></i></div>
         </div>
@@ -281,12 +281,13 @@
 
 <!--Discount sale-->
 
-<section class=" bg-black  h-96">
+<section class=" bg-black  w-full aspect-[3/4]">
     <div class="discountSale grid grid-cols-2 gap-5">
         <div class="discountSale-sec1">
-            <img src="./images/Most wanted/off1.jpg" class="w-full p-10 rounded-l-full" >
+            <img src="./images/Most wanted/off1.jpg" class="w-full h-full p-10 rounded-l-full hidden md:block" >
+            <img src="./images/Hero/h1.jpg" class="w-full h-full p-10 rounded-l-full bg-white md:hidden" >
         </div>
-        <div class="discountSale-sec2 text-white text-center pt-40">
+        <div class="discountSale-sec2 text-white text-center py-20  md:py-40">
             <h2 class="text-4xl font-extrabold">Limited Offer</h2>
             <h4 class="text-2xl font-semibold">35% OFF on this for the first 30 Customers</h4>
             <button class="p-3 rounded-xl bg-white text-black mt-5 font-semibold">Shop Now</button>

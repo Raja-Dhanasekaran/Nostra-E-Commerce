@@ -25,23 +25,58 @@
 
        <!--Navbar-->
 
-   <section class=" shadow-2xl sticky top-0 z-30 bg-white">
-    <div class="flex justify-between p-5  ">
-        <h1 class="text-3xl font-bold">Nostra</h1>
-        <div >
-            <ul class="flex gap-10 text-xl text-gray-500">
-                <li class="hover:underline transform hover:scale-125 hover:text-black "><a href="index.html">Home</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">New Arrival</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Most Wanted</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Collections</a></li>
-                <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="contact.html">Contact Us</a></li>
-            </ul>
-
-
+       <section class=" shadow-2xl sticky top-0 z-30 bg-white">
+        <div class="flex justify-between p-5  ">
+            <h1 class="text-3xl font-bold">Nostra</h1>
+    
+            
+            <div id="menuBar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6 md:hidden cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+                </path>
+            </svg>
+            </div>
+    
+            <div class=" hidden md:block" >
+                <ul class="flex gap-10 text-xl text-gray-500">
+                    <li class="hover:underline transform hover:scale-125 hover:text-black "><a href="index.html">Home</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">New Arrival</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Most Wanted</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="collections.html">Collections</a></li>
+                    <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="contact.html">Contact Us</a></li>
+                </ul>
+    
+    
+            </div>
         </div>
-    </div>
+    
+       </section>
 
-   </section>
+
+       <!--side navbar-->
+
+
+<section>
+
+    
+
+    <div id="sideNav" class=" bg-green-900 text-white w-2/4 h-screen top-0 fixed z-40 -left-full transition-all duration-1000" >
+        <div id="sideNavClose" class=" ">
+            <p class="ml-5 mt-5 cursor-pointer ">X</p>
+        </div>
+
+        
+
+        <ul class="flex flex-col gap-10 text-xl items-center text-white ">
+            <li class="hover:underline transform hover:scale-125 hover:text-black "><a href="index.html">Home</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">New Arrival</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="#">Most Wanted</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="collections.html">Collections</a></li>
+            <li class="hover:underline transform hover:scale-75 hover:text-black "><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+</section>
 
    <!--contact form-->
     
@@ -97,6 +132,8 @@
     </div>
 
 </section>
-        
+       
+
+<script src="contact.js"></script>
 </body>
 </html>
